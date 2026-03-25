@@ -137,7 +137,7 @@ class TestExport:
 
     def test_export_csv(self, lab: PromptLab, experiment_with_data: Experiment):
         output = lab.export(experiment_with_data, format="csv")
-        lines = output.strip().split("\n")
+        lines = [l.rstrip("\r") for l in output.strip().split("\n")]
         assert lines[0] == "id,experiment_id,variant,result_score,recorded_at"
         assert len(lines) == 11  # header + 10 trials
 
