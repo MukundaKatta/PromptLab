@@ -1,6 +1,6 @@
 # PromptLab — Prompt experimentation workspace — A/B testing prompt variants with statistical significance testing
 
-Prompt experimentation workspace — A/B testing prompt variants with statistical significance testing. PromptLab gives you a focused, inspectable implementation of that idea.
+Prompt experimentation workspace — A/B testing prompt variants with statistical significance testing.
 
 ## Why PromptLab
 
