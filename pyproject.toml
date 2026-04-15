@@ -4,7 +4,7 @@ build-backend = "setuptools.backends._legacy:_Backend"
 
 [project]
 name = "promptlab"
-version = "0.1.0"
+version = "0.2.0"
 description = "Prompt experimentation workspace -- run A/B tests on prompt variations, track results, and find optimal prompts."
 readme = "README.md"
 license = {text = "MIT"}
@@ -31,6 +31,9 @@ dev = [
     "pytest>=7.0",
     "ruff>=0.1.0",
 ]
+
+[project.scripts]
+promptlab = "promptlab.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
